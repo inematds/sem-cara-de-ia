@@ -199,6 +199,9 @@
 <dt>Contraste</dt><dd>la diferencia de luminosidad entre el texto y el fondo. La regla de accesibilidad exige al menos 4,5 a 1.</dd>
 <dt>Rayo</dt><dd>cuánto se redondea la esquina de una caja o un botón.</dd>
 <dt>Skill</dt><dd>un archivo de instrucciones que enseña a Claude Code a realizar una tarea de principio a fin.</dd>
+<dt>Rama / copia</dt><dd>una versión separada de tu sitio para cambiarlo sin romper el original.</dd>
+<dt>Build, localhost</dt><dd>el build es la versión final del sitio generada por React/Vue (la carpeta <code>dist</code>); localhost es el sitio funcionando solo en tu computadora.</dd>
+<dt>Tailwind</dt><dd>una forma de dar estilo al sitio con clases listas en el HTML, muy usada por quien crea sitios con IA.</dd>
 </dl></div>
 </div></section>
 <section id="antes-depois"><div class="wrap">
@@ -206,8 +209,8 @@
 <h2>El mismo negocio, <span class="amb">de 0 a 10</span></h2>
 <p class="sub">Una carpintería de ejemplo (ficticia), con el mismo contenido en las dos versiones. La diferencia está en la dirección visual.</p>
 <div class="ex">
-<figure><img alt="Sitio de carpintería con fondo morado y azul, título Revoluciona tus espacios, botones Comienza ahora y Más información, y tres tarjetas con emojis" loading="lazy" src="../assets/video-antes.png"/><figcaption><span class="nota-big">0 de 10</span><b>Antes:</b> el sitio web típico que entrega la IA. Fondo azul violáceo, «Revoluciona tus espacios», dos botones vagos, tres tarjetas con 🚀 ✨ 💡 y texto gris claro (contraste de 2,5 a 1). Se activan las ocho señales.</figcaption></figure>
-<figure><img alt="El mismo sitio de carpintería con fondo crema, título serifado La casa es tuya, foto de manos lijando madera y un botón Pedir presupuesto por WhatsApp" loading="lazy" src="../assets/video-depois.png"/><figcaption><span class="nota-big">10 de 10</span><b>Después:</b> dirección «artesanal editorial». Título con personalidad, colores de madera, crema y verde musgo, foto del taller junto al texto, un solo botón («Pedir presupuesto por WhatsApp»), servicios en una lista con plazo y precio. Contraste de 9,6 a 1. No se activa ninguna señal.</figcaption></figure>
+<figure><img width="1600" height="1000" alt="Sitio de carpintería con fondo morado y azul, título Revoluciona tus espacios, botones Comienza ahora y Más información, y tres tarjetas con emojis" loading="lazy" src="../assets/video-antes.png"/><figcaption><span class="nota-big">0 de 10</span><b>Antes:</b> el sitio web típico que entrega la IA. Fondo azul violáceo, «Revoluciona tus espacios», dos botones vagos, tres tarjetas con 🚀 ✨ 💡 y texto gris claro (contraste de 2,5 a 1). Se activan las ocho señales.</figcaption></figure>
+<figure><img width="1600" height="1000" alt="El mismo sitio de carpintería con fondo crema, título serifado La casa es tuya, foto de manos lijando madera y un botón Pedir presupuesto por WhatsApp" loading="lazy" src="../assets/video-depois.png"/><figcaption><span class="nota-big">10 de 10</span><b>Después:</b> dirección «artesanal editorial». Título con personalidad, colores de madera, crema y verde musgo, foto del taller junto al texto, un solo botón («Pedir presupuesto por WhatsApp»), servicios en una lista con plazo y precio. Contraste de 9,6 a 1. No se activa ninguna señal.</figcaption></figure>
 </div>
 </div></section>
 <section id="corrigir"><div class="wrap">
@@ -260,7 +263,7 @@
 <h2>Una prueba <span class="amb">local</span>, con una regla explícita</h2>
 <p class="sub">La prueba mide señales de un sitio genérico. Esta <strong>no</strong> descubre quién hizo el sitio: una página hecha a mano también puede tener estas señales, y una calificación alta no garantiza que el sitio sea bueno.</p>
 <div class="grid g3">
-<div class="card"><h3>Sin instalar nada</h3><p>Un script en Node.js, sin dependencias, sin API y sin internet. Lee el HTML, los estilos de la página y los archivos CSS locales.</p></div>
+<div class="card"><h3>Sin instalar paquetes</h3><p>Un script en Node.js, sin dependencias, sin API y sin internet. Lee el HTML, los estilos de la página y los archivos CSS locales.</p></div>
 <div class="card"><h3>Entiende Tailwind</h3><p>Lee las clases del atributo <code>class</code> (<code>from-purple-500</code>, <code>rounded-2xl</code>, <code>text-gray-400</code>) y encuentra las mismas señales en ellos.</p></div>
 <div class="card"><h3>Skill para Claude Code</h3><p>Ejecuta la prueba, elige un estilo, reescribe el aspecto en una copia y vuelve a probar hasta obtener una nota de 8 o más.</p></div>
 </div>
@@ -282,7 +285,7 @@
 <span class="chip">Requisitos previos</span>
 <h2>Lo que necesitas</h2>
 <div class="grid g3">
-<div class="card"><h3>Node.js 18 o posterior</h3><p>Comprueba con:</p><pre><span class="k">node --version</span></pre></div>
+<div class="card"><h3>Node.js 18 o posterior</h3><p>Compruébalo con el comando de abajo. Si no lo tienes, descárgalo en <a href="https://nodejs.org" target="_blank" rel="noopener">nodejs.org</a> (versión LTS) o pide a Claude Code que lo instale.</p><pre><span class="k">node --version</span></pre></div>
 <div class="card"><h3>git</h3><p>Para descargar el kit:</p><pre><span class="k">git clone https://github.com/inematds/sem-cara-de-ia</span>
 <span class="k">cd sem-cara-de-ia</span></pre></div>
 <div class="card"><h3>El HTML de tu sitio</h3><p>El archivo, la carpeta o el sitio en funcionamiento en <code>http://localhost</code>. En React/Vue, usa el HTML del build (p. ej.: <code>dist/index.html</code>).</p></div>
@@ -339,7 +342,7 @@
 <tr><td><code>exemplos/sem-cara</code></td><td>la carpintería con una dirección artesanal editorial</td><td><b>10 de 10</b> · ninguna</td></tr>
 </table>
 <div class="ex" style="margin-top:22px;grid-template-columns:1fr">
-<figure><img alt="Resultado de la prueba en la terminal: nota de 0 de 10 y las ocho señales detectadas, cada una con lo que se midió" loading="lazy" src="../assets/video-nota.png"/><figcaption>El resultado de la prueba en el ejemplo «antes»: la puntuación y, para cada señal, lo que se midió. El resultado completo también incluye el motivo y la corrección.</figcaption></figure>
+<figure><img width="1600" height="1000" alt="Resultado de la prueba en la terminal: nota de 0 de 10 y las ocho señales detectadas, cada una con lo que se midió" loading="lazy" src="../assets/video-nota.png"/><figcaption>El resultado de la prueba en el ejemplo «antes»: la puntuación y, para cada señal, lo que se midió. El resultado completo también incluye el motivo y la corrección.</figcaption></figure>
 </div>
 </div></section>
 <section id="roadmap"><div class="wrap">

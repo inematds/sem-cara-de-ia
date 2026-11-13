@@ -199,6 +199,9 @@
 <dt>Contraste</dt><dd>a diferença de claridade entre o texto e o fundo. A regra de acessibilidade pede pelo menos 4,5 para 1.</dd>
 <dt>Raio</dt><dd>quanto o canto de uma caixa ou botão é arredondado.</dd>
 <dt>Skill</dt><dd>um arquivo de instruções que ensina o Claude Code a fazer uma tarefa do começo ao fim.</dd>
+<dt>Branch / cópia</dt><dd>uma versão separada do seu site para mexer sem estragar o original.</dd>
+<dt>Build, localhost</dt><dd>build é a versão final do site gerada pelo React/Vue (a pasta <code>dist</code>); localhost é o site rodando só no seu computador.</dd>
+<dt>Tailwind</dt><dd>um jeito de estilizar o site com classes prontas no HTML, muito usado por quem faz site com IA.</dd>
 </dl></div>
 </div></section>
 <section id="antes-depois"><div class="wrap">
@@ -206,8 +209,8 @@
 <h2>O mesmo negócio, <span class="amb">de 0 a 10</span></h2>
 <p class="sub">Uma marcenaria de exemplo (fictícia), com o mesmo conteúdo nas duas versões. A diferença é a direção visual.</p>
 <div class="ex">
-<figure><img alt="Site de marcenaria com fundo roxo e azul, título Revolucione seus ambientes, botões Comece agora e Saiba mais e três cards com emoji" loading="lazy" src="assets/video-antes.png"/><figcaption><span class="nota-big">0 de 10</span><b>Antes:</b> o site típico que a IA entrega. Fundo roxo-azul, "Revolucione seus ambientes", dois botões vagos, três cards com 🚀 ✨ 💡 e texto cinza claro (contraste de 2,5 para 1). Os oito sinais disparam.</figcaption></figure>
-<figure><img alt="Mesmo site de marcenaria em fundo creme, título serifado A casa é sua, foto de mãos lixando madeira e um botão Pedir orçamento pelo WhatsApp" loading="lazy" src="assets/video-depois.png"/><figcaption><span class="nota-big">10 de 10</span><b>Depois:</b> direção "artesanal editorial". Título com personalidade, cores de madeira, creme e verde-musgo, foto da oficina ao lado do texto, um botão só ("Pedir orçamento pelo WhatsApp"), serviços em lista com prazo e preço. Contraste de 9,6 para 1. Nenhum sinal dispara.</figcaption></figure>
+<figure><img width="1600" height="1000" alt="Site de marcenaria com fundo roxo e azul, título Revolucione seus ambientes, botões Comece agora e Saiba mais e três cards com emoji" loading="lazy" src="assets/video-antes.png"/><figcaption><span class="nota-big">0 de 10</span><b>Antes:</b> o site típico que a IA entrega. Fundo roxo-azul, "Revolucione seus ambientes", dois botões vagos, três cards com 🚀 ✨ 💡 e texto cinza claro (contraste de 2,5 para 1). Os oito sinais disparam.</figcaption></figure>
+<figure><img width="1600" height="1000" alt="Mesmo site de marcenaria em fundo creme, título serifado A casa é sua, foto de mãos lixando madeira e um botão Pedir orçamento pelo WhatsApp" loading="lazy" src="assets/video-depois.png"/><figcaption><span class="nota-big">10 de 10</span><b>Depois:</b> direção "artesanal editorial". Título com personalidade, cores de madeira, creme e verde-musgo, foto da oficina ao lado do texto, um botão só ("Pedir orçamento pelo WhatsApp"), serviços em lista com prazo e preço. Contraste de 9,6 para 1. Nenhum sinal dispara.</figcaption></figure>
 </div>
 </div></section>
 <section id="corrigir"><div class="wrap">
@@ -260,7 +263,7 @@
 <h2>Um teste <span class="amb">local</span>, com regra explícita</h2>
 <p class="sub">O teste mede sinais de site genérico. Ele <strong>não</strong> descobre quem fez o site: uma página feita à mão também pode ter esses sinais, e uma nota alta não garante um site bom.</p>
 <div class="grid g3">
-<div class="card"><h3>Sem instalar nada</h3><p>Um script em Node.js, sem dependências, sem API e sem internet. Lê o HTML, os estilos da página e os arquivos CSS locais.</p></div>
+<div class="card"><h3>Sem instalar pacotes</h3><p>Um script em Node.js, sem dependências, sem API e sem internet. Lê o HTML, os estilos da página e os arquivos CSS locais.</p></div>
 <div class="card"><h3>Entende Tailwind</h3><p>Lê as classes do atributo <code>class</code> (<code>from-purple-500</code>, <code>rounded-2xl</code>, <code>text-gray-400</code>) e acha os mesmos sinais nelas.</p></div>
 <div class="card"><h3>Skill para o Claude Code</h3><p>Roda o teste, escolhe uma direção, reescreve o visual numa cópia e testa de novo até a nota 8 ou mais.</p></div>
 </div>
@@ -282,7 +285,7 @@
 <span class="chip">Pré-requisitos</span>
 <h2>O que você precisa</h2>
 <div class="grid g3">
-<div class="card"><h3>Node.js 18 ou mais novo</h3><p>Confira com:</p><pre><span class="k">node --version</span></pre></div>
+<div class="card"><h3>Node.js 18 ou mais novo</h3><p>Confira com o comando abaixo. Se não tiver, baixe em <a href="https://nodejs.org" target="_blank" rel="noopener">nodejs.org</a> (versão LTS) ou peça ao Claude Code para instalar.</p><pre><span class="k">node --version</span></pre></div>
 <div class="card"><h3>git</h3><p>Para baixar o kit:</p><pre><span class="k">git clone https://github.com/inematds/sem-cara-de-ia</span>
 <span class="k">cd sem-cara-de-ia</span></pre></div>
 <div class="card"><h3>O HTML do seu site</h3><p>O arquivo, a pasta, ou o site rodando em <code>http://localhost</code>. Em React/Vue, use o HTML do build (ex.: <code>dist/index.html</code>).</p></div>
@@ -339,7 +342,7 @@
 <tr><td><code>exemplos/sem-cara</code></td><td>a marcenaria na direção artesanal editorial</td><td><b>10 de 10</b> · nenhum</td></tr>
 </table>
 <div class="ex" style="margin-top:22px;grid-template-columns:1fr">
-<figure><img alt="Saída do teste no terminal: Nota 0 de 10 e os oito sinais que dispararam, cada um com o que foi medido" loading="lazy" src="assets/video-nota.png"/><figcaption>A saída do teste no exemplo "antes": a nota, e para cada sinal o que foi medido. Na saída completa vêm também o porquê e a correção.</figcaption></figure>
+<figure><img width="1600" height="1000" alt="Saída do teste no terminal: Nota 0 de 10 e os oito sinais que dispararam, cada um com o que foi medido" loading="lazy" src="assets/video-nota.png"/><figcaption>A saída do teste no exemplo "antes": a nota, e para cada sinal o que foi medido. Na saída completa vêm também o porquê e a correção.</figcaption></figure>
 </div>
 </div></section>
 <section id="roadmap"><div class="wrap">
