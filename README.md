@@ -1,8 +1,8 @@
 # sem-cara-de-ia
 
-[![sem-cara-de-ia](guia/assets/banner.jpg)](https://inematds.github.io/sem-cara-de-ia/guia/)
-
 **🇧🇷 [Português](README.md) · 🇺🇸 [English](README.en.md) · 🇪🇸 [Español](README.es.md)**
+
+[![sem-cara-de-ia](guia/assets/banner.jpg)](https://inematds.github.io/sem-cara-de-ia/guia/)
 
 Seu site feito com IA tem cara de IA, e o cliente percebe. O **teste da cara de IA** mostra o quê e como corrigir.
 
