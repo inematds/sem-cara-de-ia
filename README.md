@@ -16,6 +16,8 @@ O teste mede sinais de site genérico; não descobre quem fez o site e uma nota 
 
 Guia completo (landing + passo a passo): **https://inematds.github.io/sem-cara-de-ia/guia/**
 
+🎬 Vídeo: https://www.youtube.com/watch?v=lQ953BUQMjU · Short: https://youtube.com/shorts/Nwhl8Xt11us
+
 ## Usar em 2 minutos
 
 Com Git e Node.js instalados, rode:

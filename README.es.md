@@ -16,6 +16,8 @@ La prueba mide señales de sitios genéricos; no descubre quién hizo el sitio, 
 
 Guía completa (landing + paso a paso): **https://inematds.github.io/sem-cara-de-ia/guia/es/**
 
+🎬 Video (en portugués): https://www.youtube.com/watch?v=lQ953BUQMjU · Short: https://youtube.com/shorts/Nwhl8Xt11us
+
 ## Úsalo en 2 minutos
 
 Con Git y Node.js instalados, ejecuta:

@@ -16,6 +16,8 @@ The test measures signs of a generic website; it does not identify who made the 
 
 Complete guide (landing page + walkthrough): **https://inematds.github.io/sem-cara-de-ia/guia/en/**
 
+🎬 Video (in Portuguese): https://www.youtube.com/watch?v=lQ953BUQMjU · Short: https://youtube.com/shorts/Nwhl8Xt11us
+
 ## Use it in 2 minutes
 
 With Git and Node.js installed, run:
