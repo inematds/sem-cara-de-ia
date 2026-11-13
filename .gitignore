@@ -1,0 +1,5 @@
+node_modules/
+consertar.md
+*.log
+.pedido-codex*.md
+.traduz.log
