@@ -4,11 +4,11 @@
 
 [![sem-cara-de-ia](guia/assets/banner-es.jpg)](https://inematds.github.io/sem-cara-de-ia/guia/es/)
 
-Tu sitio hecho con IA parece hecho con IA, y el cliente se da cuenta. La **prueba de apariencia de IA** muestra qué corregir y cómo hacerlo.
+Tu sitio hecho con IA parece hecho con IA, y el cliente se da cuenta. La **prueba de la cara de IA** muestra qué corregir y cómo hacerlo.
 
 ## Qué es
 
-Quienes hacen sitios con IA suelen recibir la misma página: fondo morado y azul, tres cajitas iguales, emojis en lugar de íconos y frases como «revoluciona tu negocio». El visitante ya vio eso mil veces y asocia tu negocio con una plantilla. La **prueba de apariencia de IA** es un kit gratis que analiza tu página, busca esas señales, le da una nota de 0 a 10 y explica cómo corregir cada una. Se ejecuta en tu computadora, sin cuenta y sin enviar nada a ningún otro lugar. Incluye una skill para que Claude Code rehaga el diseño por ti y una lista verificada de bibliotecas abiertas.
+Quienes hacen sitios con IA suelen recibir la misma página: fondo morado y azul, tres cajitas iguales, emojis en lugar de íconos y frases como «revoluciona tu negocio». El visitante ya vio eso mil veces y asocia tu negocio con una plantilla. La **prueba de la cara de IA** es un kit gratis que analiza tu página, busca esas señales, le da una nota de 0 a 10 y explica cómo corregir cada una. Se ejecuta en tu computadora, sin cuenta y sin enviar nada a ningún otro lugar. Incluye una skill para que Claude Code rehaga el diseño por ti y una lista verificada de bibliotecas abiertas.
 
 La prueba mide señales de sitios genéricos; no descubre quién hizo el sitio, y una nota alta no garantiza que sea bueno. Funciona con Node.js 18 o posterior, sin dependencias ni API.
 
@@ -209,7 +209,7 @@ mkdir -p ~/.claude/skills/
 cp -r skill/sem-cara-de-ia ~/.claude/skills/
 ```
 
-En la sesión de Claude Code, pide: “Quita la apariencia de IA de mi sitio con la skill sem-cara-de-ia. El HTML está en [ruta].” La skill conserva el original en una copia o rama, mantiene las funciones y marca los datos faltantes con `[PREENCHA: ...]`.
+En la sesión de Claude Code, pide: “Quita la cara de IA de mi sitio con la skill sem-cara-de-ia. El HTML está en [ruta].” La skill conserva el original en una copia o rama, mantiene las funciones y marca los datos faltantes con `[PREENCHA: ...]`.
 
 Consulta las [instrucciones de la skill](skill/sem-cara-de-ia/SKILL.md) y las [cinco direcciones visuales](skill/sem-cara-de-ia/referencias/direcoes.md). La meta de la revisión es una nota >= 8 y ningún contraste medido por debajo de 4.5:1, con verificación en el navegador.
 
